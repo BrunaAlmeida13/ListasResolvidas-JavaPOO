@@ -11,7 +11,6 @@ public class ConversorTemperatura {
 		
 		System.out.print("Escreva a temperatura em graus Celsius: ° ");
 		cel = sc.nextFloat();
-		fahrnheit(cel);
 		
 		far = fahrnheit(cel);
 		
