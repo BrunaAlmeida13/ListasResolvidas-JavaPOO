@@ -1,5 +1,6 @@
 package lista01.questao8;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Somatorio {
@@ -9,12 +10,18 @@ public class Somatorio {
 		int valor;
 		int resultado;
 		
-		System.out.println("Digite um valor inteiro");
-		valor = sc.nextInt();
-		
-		resultado = somatorio(valor);
-		
-		System.out.println("O resultado da soma é: " + resultado);
+		try {
+			
+			System.out.println("Digite um valor inteiro positivo");
+			valor = sc.nextInt();
+			
+			resultado = somatorio(valor);
+			
+			System.out.printf("O resultado do somatório do número %d é: %d", valor, resultado);
+			
+		} catch (InputMismatchException e) {
+			System.out.println("O valor não é um inteiro positivo.");
+		}
 		
 		sc.close();
 	}
