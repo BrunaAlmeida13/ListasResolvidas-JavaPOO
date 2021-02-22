@@ -1,4 +1,4 @@
-package lista01.questao1e2;
+package lista01.questao01e02;
 
 public class BalancoTrimestral {
 

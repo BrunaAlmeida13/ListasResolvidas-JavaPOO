@@ -1,4 +1,4 @@
-package lista01.questao8;
+package lista01.questao08;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
