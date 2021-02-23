@@ -1,0 +1,8 @@
+1. Identifique quais informações são importantes para uma conta bancária. Ela deve ter o nome do
+titular, o número, a agência, o saldo e uma data de abertura. Desenvolva uma classe Conta que
+deve conter pelo menos os seguintes métodos:
+
+- saca que recebe um valor como parâmetro e retira esse valor do saldo da conta.
+- deposita que recebe um valor como parâmetro e adiciona esse valor ao saldo da conta
+- calculaRendimento que não recebe parâmetro algum e devolve o valor do saldo somados
+10%.

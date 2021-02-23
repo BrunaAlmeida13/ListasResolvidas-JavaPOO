@@ -7,6 +7,7 @@ public class Conta {
 	private float saldo = 1500.00f;
 	private String abertura;
 	private float saque;
+	private float deposito;
 	
 	Conta(){}
 
@@ -54,6 +55,14 @@ public class Conta {
 		this.saque = saque;
 	}
 	
+	public float getDeposito() {
+		return deposito;
+	}
+
+	public void setDeposito(float deposito) {
+		this.deposito = deposito;
+	}
+
 	public float sacar(float saque){
 		if(saque > saldo)
 			System.out.println("[Erro] Saque maior que o saldo da conta!");
@@ -62,4 +71,12 @@ public class Conta {
 		return saldo;
 	}
 	
+	public float depositar(float deposito) {
+		saldo += deposito;
+		return saldo;
+	}
+	
+	public void rendimento() {
+		System.out.println("Rendimento: " + saldo * 1.10f);
+	}
 }

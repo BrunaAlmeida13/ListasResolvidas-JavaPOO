@@ -40,6 +40,18 @@ public class Main {
 		conta.sacar(conta.getSaque());
 		System.out.println("Novo saldo: " + conta.getSaldo());
 		
+		System.out.println();
+		
+		System.out.println("Saldo atual: " + conta.getSaldo());
+		System.out.println("Valor do depósito: ");
+		conta.setDeposito(sc.nextFloat());
+		conta.depositar(conta.getDeposito());
+		System.out.println("Novo saldo: " + conta.getSaldo());
+		
+		System.out.println();
+		
+		conta.rendimento();
+		
 		sc.close();
 	}
 
