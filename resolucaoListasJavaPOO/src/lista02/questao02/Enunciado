@@ -1,0 +1,9 @@
+2. Um pet shop te chamou para ajudar no controle dos animais que eles cuidam. Eles irão precisar
+de muitos serviços, o primeiro é mapear qual o nome, raça, sexo (macho ou fêmea) e idade.
+- Crie uma classe chamada "Cachorro" e adicione os atributos para nome, raça, sexo e
+idade.
+- Crie uma outra classe chamada "PetShop" para testarmos nossa classe "Cachorro".
+Adicione o método "main".
+- Instancie um objeto do tipo "Cachorro". 
+- Solicite ao usuário o armazenamento de dados para um cachorro e apresente o resultado
+no console.
