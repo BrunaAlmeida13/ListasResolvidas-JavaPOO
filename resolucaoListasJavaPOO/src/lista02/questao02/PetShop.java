@@ -16,8 +16,7 @@ public class PetShop {
 		ca.setRaça(sc.next());
 		System.out.printf("Sexo (F/M): ");
 		ca.setSexo(sc.next().charAt(0));
-		System.out.println("Idade: ");
-		ca.setIdade(sc.nextInt());
+		ca.validaIdade();
 
 		ca.apresentarDados();
 		

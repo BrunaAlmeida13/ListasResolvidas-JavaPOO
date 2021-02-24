@@ -1,5 +1,7 @@
 package lista02.questao02;
 
+import java.util.Scanner;
+
 public class Cachorro {
 	private String nome;
 	private String raça;
@@ -48,7 +50,22 @@ public class Cachorro {
 		this.idade = idade;
 	}
 	
+	public int validaIdade() {
+		@SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Idade: ");
+		do{
+			this.idade = sc.nextInt();
+			if(this.idade < 0 || this.idade > 25)
+				System.out.println("Idade Inválida. Digite novamente.");
+		}while(this.idade < 0 || this.idade > 25);
+		
+		return this.idade;
+	}
+	
 	public void apresentarDados(){
+		System.out.println();
+		System.out.println("Dados cadastrados.");
 		System.out.printf(" Nome: %s\n Raça: %s\n Sexo: %c\n Idade: %d\n", this.nome, this.raça, this.sexo, this.idade);
 	}
 }
