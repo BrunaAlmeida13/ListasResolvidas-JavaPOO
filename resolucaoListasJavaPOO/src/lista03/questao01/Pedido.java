@@ -3,6 +3,8 @@ package lista03.questao01;
 import java.util.Scanner;
 
 public class Pedido {
+	Scanner sc = new Scanner(System.in);
+	
 	private int codProduto;
 	private int qntdCompra;
 	private int formaPgto;
@@ -34,7 +36,6 @@ public class Pedido {
 		this.qntdCompra = qntdCompra;
 	}
 	
-	
 	public int getFormaPgto() {
 		return formaPgto;
 	}
@@ -52,7 +53,7 @@ public class Pedido {
 	}
 
 	public void venda() {
-		Scanner sc = new Scanner(System.in);
+		System.out.println("VENDA:");
 		System.out.print("Código do produto: ");
 		this.codProduto = sc.nextInt();
 		System.out.print("Quantidade: ");
@@ -61,25 +62,29 @@ public class Pedido {
 		System.out.printf("1 - Dinheiro \n2 - Cheque \n3 - Cartão\n");
 		do {
 			this.formaPgto = sc.nextInt();
-			//CONCERTAR VALIDAÇÃO
-			if(this.formaPgto == 1) {
-				this.formaPagamento = "Dinheiro"; 
+			
+			switch (this.formaPgto) {
+			case 1:
+				if(this.formaPgto == 1)
+					this.formaPagamento = "Dinheiro"; 
 				break;
-			} else if(this.formaPgto == 2) {
-				this.formaPagamento = "Cheque"; 
+			
+			case 2:
+				if(this.formaPgto == 2)
+					this.formaPagamento = "Cheque";
 				break;
-			} else if(this.formaPgto == 3) {
-				this.formaPagamento = "Cartão"; 
+			case 3: 
+				if(this.formaPgto == 3)
+					this.formaPagamento = "Cartão"; 
 				break;
-			} else if(this.formaPgto != 1 || this.formaPgto != 2 || this.formaPgto != 3) {
+			default:
 				System.out.println("Número inválido! Digite novamente.");
 			}
-		}while(this.formaPgto != 1 || this.formaPgto != 2 || this.formaPgto != 3);	
-		sc.close();		
+		}while(this.formaPgto != 1 && this.formaPgto != 2 && this.formaPgto != 3);		
 	}
 	
 	public void apresentaVenda() {
-		System.out.printf("\nVenda: \nCódigo do produto: %d \nQuantidade: %d \nTipo de Pagamento: %s", this.codProduto, this.qntdCompra, this.formaPagamento);
+		System.out.printf("\nSTATUS VENDA: \nCódigo do produto: %d \nQuantidade de itens: %d \nTipo de Pagamento: %s\n", this.codProduto, this.qntdCompra, this.formaPagamento);
 	}
 	
 }

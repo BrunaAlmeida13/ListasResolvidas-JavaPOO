@@ -3,6 +3,9 @@ package lista03.questao01;
 import java.util.Scanner;
 
 public class Produto {
+	Scanner sc = new Scanner(System.in);
+	Pedido ped = new Pedido();
+	
 	private int codigo;
 	private float preco;
 	private int qntdEstoque;
@@ -10,7 +13,6 @@ public class Produto {
 	Produto(){}
 
 	public Produto(int codigo, float preco, int qntdEstoque) {
-		super();
 		this.codigo = codigo;
 		this.preco = preco;
 		this.qntdEstoque = qntdEstoque;
@@ -41,7 +43,6 @@ public class Produto {
 	}
 	
 	public void cadastrarProduto() {
-		Scanner sc = new Scanner(System.in);
 		System.out.println("CADASTRO DE PRODUTO");
 		System.out.print("Código: ");
 		this.codigo = sc.nextInt();
@@ -49,6 +50,18 @@ public class Produto {
 		this.preco = sc.nextFloat();
 		System.out.println("Quantidade em estoque: ");
 		this.qntdEstoque = sc.nextInt();
-		sc.close();
+		System.out.println();
+	}
+	
+	public int atualizandoEstoque(int qntdCompra, int cod) {
+		if(this.codigo == cod) {
+			this.qntdEstoque -= qntdCompra;
+			return this.qntdEstoque;
+		} else
+			return 0;
+	}
+	
+	public void novoStatusProduto() {
+		System.out.printf("\nNOVO STATUS DO PRODUTO\n Código: %d\n Preço: R$%.2f\n Quantidade em estoque: %d", this.codigo, this.preco, this.qntdEstoque);
 	}
 }
