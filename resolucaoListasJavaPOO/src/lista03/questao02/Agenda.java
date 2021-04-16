@@ -4,26 +4,23 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Agenda {
-
-	Contato cont = new Contato();
+	ArrayList<Contato> contato = new ArrayList<>();
 	char op;
 	
 	public Agenda() {}
 	
 	public void adicionarContato() {
 		Scanner sc = new Scanner(System.in);
-		Contato cont = new Contato();
-		ArrayList<Contato> contato = new ArrayList<>();
-		
+
 		do {
-			
+			Contato cont = new Contato();
 			System.out.printf("Adicionando contato\n");
 			System.out.printf("Nome: \n");
 			cont.setNome(sc.nextLine());
 			System.out.printf("Telefone: \n");
 			cont.setTelefone(sc.next());
 			System.out.printf("E-mail: \n");
-			cont.setTelefone(sc.next());
+			cont.setEmail(sc.next());
 			contato.add(cont);
 			
 			System.out.printf("Deseja adicionar outro contato? s/n\n");
@@ -36,15 +33,13 @@ public class Agenda {
 		sc.close();
 	}
 	
-	public void mostrarAgenda(ArrayList<Contato> contato) {
-		System.out.println();
-		System.out.println("Contatos: ");
+	public void mostrarAgenda() {
+		System.out.printf("\nContatos: \n");
 		for(Contato c: contato) {
-			System.out.println(c.getNome());
-			System.out.println(c.getTelefone());
-			System.out.println(c.getEmail());
+			System.out.println("Nome: " + c.getNome());
+			System.out.println("Telefone: " + c.getTelefone());
+			System.out.println("E-mail: " + c.getEmail());
+			System.out.printf("-------------------------------\n");
 		}
 	}
-
-	
 }
