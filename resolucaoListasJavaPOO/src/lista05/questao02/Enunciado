@@ -1,0 +1,14 @@
+2. Faça um programa Java que mostre os conceitos finais dos alunos de uma turma, enquanto o
+professor quiser informar dados dos alunos: (Observação utilize os conceitos de encapsulamento)
+
+- Os dados de cada aluno (número de matrícula, alfanumérico, e nota, numérica) serão
+fornecidos pelo usuário.
+- A tabela de conceitos segue a seguir:
+		___________________________
+		| Nota         | Conceito |
+		| 			   |		  |
+		|de 0,0 a 4,9  |	D	  |
+		|de 5,0 a 6,9  |	C	  |
+		|de 7,0 a 8,9  |	B	  |
+		|de 9,0 a 10,0 |	A	  |
+		|______________|__________|
