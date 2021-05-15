@@ -1,0 +1,15 @@
+1. Desenvolva um programa em Java para representar uma pessoa com os atributos privados:
+nome, sexo, data de nascimento, peso e altura. Crie os métodos públicos necessários para sets e
+gets e também um método para imprimir todos dados de uma pessoa. Crie um método para
+calcular a idade da pessoa e outro para calcular o IMC (altura²/peso) e apresentar a situação
+seguindo a tabela abaixo:
+
+_____________________________________________________________
+|	IMC            |   Situação    							|   
+|Abaixo de 18,5    |Você está abaixo do peso ideal          |	
+|Entre 18,5 e 24,9 |Parabéns — você está em seu peso normal!|
+|Entre 25,0 e 29,9 |Você está acima de seu peso (sobrepeso) |
+|Entre 30,0 e 34,9 |Obesidade grau I               			|
+|Entre 35,0 e 39,9 |Obesidade grau II              			|
+|40,0 e acima      |Obesidade grau III						|
+|__________________|________________________________________|
