@@ -1,0 +1,10 @@
+3. Implemente uma classe Pessoa com os atributos nome do tipo String e idade do tipo inteiro,
+ambos com modificadores públicos. Crie métodos de acesso (get e set) públicos para esses
+atributos. Implemente uma classe Funcionario que herde de Pessoa. Inclua o atributo salário do
+tipo double e modificador private com seus respectivos métodos de acesso públicos. Crie um
+atributo privado do tipo String com o nome cargo e métodos de acesso públicos para esse
+atributo. Implemente uma classe Gerente e faça-a herdar de Funcionario. Reescreva o método
+setSalario(double) na classe Gerente para o atributo salario receber o valor que vem do parâmetro
+acrescido de 25%. Depois, na classe que instancia um objeto da classe Funcionario, instancie um
+objeto da classe Gerente para preencher e posteriormente mostrar os valores recuperados na
+tela. Implemente uma classe para testar sua aplicação.
