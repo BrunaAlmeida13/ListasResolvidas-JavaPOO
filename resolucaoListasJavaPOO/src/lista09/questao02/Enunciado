@@ -1,0 +1,12 @@
+2. Utilizando os conceitos de herança, implemente as seguintes classes ContaBancaria
+(superclasse), ContaCorrente (com senha, número, saldo e quantidade de transações realizadas) e
+ContaPoupanca (com senha, número, saldo e taxa de rendimento). 
+
+> quando uma ContaBancaria for criada, informe a senha da conta por parâmetro.
+> na classe ContaBancaria, crie os seguintes métodos abstratos: saca (double valor) deposita
+(double valor) tiraExtrato()
+> nesta mesma classe, crie o método alteraSenha, que recebe uma senha por parâmetro e
+deve confirmar a senha anterior (via teclado), e somente se a senha anterior estiver
+correta a senha recebida por parâmetro deve ser atribuída. 
+> implemente os métodos abstratos nas classes ContaCorrente e ContaPoupanca. 
+> crie os métodos de acesso para os atributos de ContaCorrente e ContaPoupanca.
