@@ -1,0 +1,8 @@
+1. Desenvolva uma classe abstrata para Funcionário, com os seguintes atributos (nome e cpf) e um
+método abstrato realizarAtividade. 
+
+> Implemente mais duas classes Vendedor e Gerente que herdam da classe Funcionário, e
+sobrescrevem o método realizarAtividade.
+> Crie mais duas classes VendedorOficial e VendedorTreinamento que herdam da classe
+Vendedor, e não permita que o método realizarAtividade seja sobrescrito nestas novas
+classes.
