@@ -1,0 +1,13 @@
+1. Crie uma classe TestaArrays e no método main crie um array de contas de tamanho 10. Em
+seguida, faça um laço para criar 10 contas com saldos distintos e colocá-las no array. Por exemplo,
+você pode utilizar o índice do laço e multiplicá-lo por 100 para gerar o saldo de cada conta:
+
+Conta[] contas = new Conta[10];
+	for (int i = 0; i < contas.length; i++) {
+	Conta conta = new ContaCorrente();
+	conta.deposita(i * 100.0);
+	// escreva o código para guardar a conta na posição i do array
+}
+
+2. Ainda na classe TestaArrays , faça um outro laço para calcular e imprimir a média dos saldos
+de todas as contas do array.
