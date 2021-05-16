@@ -1,0 +1,12 @@
+1. Em uma universidade, há dois tipos de funcionários: professor e administrativo. Conforme a
+figura a seguir.
+Crie um programa Java que implemente o projeto da figura acima. Crie uma classe
+chamada Funcionario com os atributos (nome, cpf e salário). Crie uma classe Professor, que é
+um Funcionário e, além dos dados de funcionário, tem a titulação e o cálculo do seu imposto de
+renda por intermédio do método getImpostoRenda()que é 23 % do salário. Crie também a
+classe Administrativo, que também é Funcionário e tem um dado que representa a quantidade de
+dependentes. Não se esqueça de criar o método getContribuicaoSindical(), que retornará 1% do
+salário.
+Seu programa deve perguntar qual tipo de Funcionário deseja informar P - Professor e A -
+Administrativo. Quando o usuário escolher a opção receba os dados do respectivo objeto e
+apresente todas as suas informações.
