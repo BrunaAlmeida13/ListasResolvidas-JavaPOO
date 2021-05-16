@@ -8,3 +8,7 @@ setSalario(double) na classe Gerente para o atributo salario receber o valor que
 acrescido de 25%. Depois, na classe que instancia um objeto da classe Funcionario, instancie um
 objeto da classe Gerente para preencher e posteriormente mostrar os valores recuperados na
 tela. Implemente uma classe para testar sua aplicação.
+
+4. Utilizando os mesmos moldes da questão 3, crie uma classe Diretor herdando de Gerente.
+Reescreva o método setSalario(double) para o valor do salário ser acrescido de 50%. Implemente
+uma classe para testar sua aplicação.

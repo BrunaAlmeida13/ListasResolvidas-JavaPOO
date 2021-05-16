@@ -1,4 +1,4 @@
-package lista08.questao03;
+package lista08.questao03e04;
 
 public class Funcionario extends Pessoa {
 	private double salario;
