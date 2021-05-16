@@ -1,0 +1,4 @@
+2. Desenvolva um programa em Java utilizando os conceitos de polimorfismo que tenha uma
+classe chamada Vendedor que a cada venda de um produto ganha 10% sobre o valor e uma outra
+classe chamada Gerente onde para cada venda de um produto ganha 15% sobre o valor.
+Implemente um programa principal que demonstre o uso correto dos métodos.

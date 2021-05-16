@@ -1,0 +1,5 @@
+1. Crie uma classe Conta com um método Saque, mas que esse método só deixe sacar se houver
+saldo disponível, após utilizando polimorfismo crie uma subclasse Conta Especial com um método
+Saque, redefinido para esta classe, uma vez que quem tem uma conta especial tem um limite, e
+pode sacar mesmo quando não tem saldo. Implemente um programa principal que demonstre o
+uso correto dos métodos.
