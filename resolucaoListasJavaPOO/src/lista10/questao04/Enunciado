@@ -1,0 +1,14 @@
+4. Brasília é uma cidade que contém muitos triatletas amadores. A Federação precisa gerenciar a
+participação dos atletas nos eventos de triatlo. Cada atleta possui o número de inscrição (que deve
+ser único), nome, tempo de prova (em horas completas), idade e se o atleta é elite. Ele será
+considerado elite se o tempo de prova for menor que 5 horas. Um método isElite deve encapsular
+esse cálculo e retornará true, se for elite, e false, se não for. Sabe-se que participarão 1.200
+atletas. Após receber os dados dos atletas, apresente o seguinte relatório:
+
+> A Quantidade de atletas da ELITE.
+> O melhor atleta da competição.
+> Todos os atletas da categoria 30 a 34 anos.
+> A média de tempo dos atletas.
+> Todos os atletas que não são ELITES.
+
+Você deve trabalhar com ArrayList.
